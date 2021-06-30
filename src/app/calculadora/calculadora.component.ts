@@ -18,4 +18,12 @@ export class CalculadoraComponent {
   resta(): void {
     this.resultado = this.numero1 - this.numero2;
   }
+
+  multiplicacion(): void {
+    this.resultado = this.numero1 * this.numero2;
+  }
+
+  division(): void {
+    this.resultado = this.numero1 / this.numero2;
+  }
 }

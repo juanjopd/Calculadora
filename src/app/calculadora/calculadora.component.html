@@ -1,17 +1,18 @@
 <br><br>
-<div class="container border border-dark">
+<div class="container border shadow-lg p-3 mb-5 bg-body rounded">
   <h1 class="text-center fw-bold">{{title}}</h1><br>
 
   <form>
     <label class="form-label">numero 1:</label>
-    <input type="number" class="form-control" [(ngModel)]="numero1" name="numero1"><br><br>
+    <input type="number" class="form-control" [(ngModel)]="numero1" name="numero1"><br>
     <label class="form-label">numero 2:</label>
-    <input type="number" class="form-control" [(ngModel)]="numero2" name="numero2"><br><br>
+    <input type="number" class="form-control" [(ngModel)]="numero2" name="numero2"><br>
 
-    <input type="submit" value="sumar" class="btn btn-primary" (click)="suma()">
-    <input type="submit" value="restar" class="btn btn-secondary" (click)="resta()">
+    <input type="submit" value="sumar" class="btn btn-primary btn-lg button" (click)="suma()">
+    <input type="submit" value="restar" class="btn btn-warning btn-lg button" (click)="resta()">
+    <input type="submit" value="multiplicar" class="btn btn-success btn-lg button" (click)="multiplicacion()">
+    <input type="submit" value="dividir" class="btn btn-danger btn-lg button" (click)="division()">
   </form>
   <br>
 
-  <p>RESULTADO: {{resultado}}</p>
-</div>
+  <p class="fw-bold">RESULTADO: {{resultado}}</p>
