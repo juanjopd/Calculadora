@@ -1,20 +1,15 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from "@angular/platform-browser";
+import { FormsModule } from "@angular/forms";
+import { NgModule } from "@angular/core";
 
-import { AppComponent } from './app.component';
-import { SumaComponent } from './suma/suma.component';
-import { DivisionComponent } from './division/division.component';
+import { AppComponent } from "./app.component";
+import { CalculadoraComponent } from "./calculadora/calculadora.component";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    SumaComponent,
-    DivisionComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
+  declarations: [AppComponent, CalculadoraComponent],
+  imports: [BrowserModule, FormsModule, BrowserAnimationsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
